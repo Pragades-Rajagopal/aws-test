@@ -2,7 +2,7 @@
 GET https://www.cubyt.io/data/categories/ANALOG_MULTIMETERS
 
 ###
-GET http://localhost:8000/getall/
+GET https://fluke-test-api.as.r.appspot.com/categories
 
 ###
-GET http://localhost:8000/get/BORE_GAUGES
+GET https://fluke-test-api.as.r.appspot.com/categories/BALANCES

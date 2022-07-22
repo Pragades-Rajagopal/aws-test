@@ -1,10 +1,10 @@
 const express = require('express');
 const axios = require('axios');
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8080;
 const app = express();
 
-app.get('/getall', async (req, res) => {
+app.get('/categories', async (req, res) => {
     try {
         const info = await axios.get('https://www.cubyt.io/data/categories/');
         res.send(JSON.stringify(info.data))
@@ -14,7 +14,7 @@ app.get('/getall', async (req, res) => {
     }
 }); 
 
-app.get('/get/:cat', async (req, res) => {
+app.get('/categories/:cat', async (req, res) => {
     try {
         const category  = req.params.cat;
 
