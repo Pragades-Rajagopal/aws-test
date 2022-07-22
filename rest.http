@@ -1,0 +1,8 @@
+###
+GET https://www.cubyt.io/data/categories/ANALOG_MULTIMETERS
+
+###
+GET http://localhost:8000/getall/
+
+###
+GET http://localhost:8000/get/BORE_GAUGES
